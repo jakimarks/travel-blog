@@ -1,38 +1,55 @@
+html {
+    background-color: #0b1d26
+}
+
 .App {
-  text-align: center;
+    position: absolute;
+    top: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-clouds {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mg-mountains {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    left: 0%;
+    top: 600px;
+    right: 0%;
+    bottom: 0%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fg-hill {
+    position: absolute;
+    width: 80vw;
+    z-index: -1;
+    left: 0%;
+    top: 600px;
+    right: 0%;
+    bottom: 0%;
 }
 
-.App-link {
-  color: #61dafb;
+.gradient-top {
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    z-index: -1;
+    background-image: linear-gradient(165deg, rgba(19, 48, 43, 0.59) 0%, rgba(108, 108, 108, 0) 63.25%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient-middle {
+    position: absolute;
+    width: 100vw;
+    top: 930px;
+    height: 350px;
+    z-index: -1;
+    background-image: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 63.25%);
 }
