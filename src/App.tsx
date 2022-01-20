@@ -8,12 +8,11 @@ import FgHill from './assets/hill-anna.png';
 
 function App() {
     return (
-        <div className="App">
+        <div className="app">
             <img className="bg-clouds" src={BgClouds} alt={"clouds"}/>
             <img className="mg-mountains" src={MgMountains} alt={"mountains"}/>
             <img className="fg-hill" src={FgHill} alt={"hill"}/>
             <div className="gradient-top"/>
-            <div className="gradient-middle"/>
             <StoryHeader
                 title={"Seid dabei auf unserem ersten großen Abenteuer"}
                 subtitle={"30 Tage Portugal & Spanien"}

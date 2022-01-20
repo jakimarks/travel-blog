@@ -1,13 +1,13 @@
 .story-header {
-    width: 1013px;
+    width: 70%;
     height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     gap: 32px;
-    margin: 148.4px 85.7px 0 354.3px;
-    padding: 0;
+    padding-top: 220px;
+    padding-left: 20%;
 }
 
 .title {
