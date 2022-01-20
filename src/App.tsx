@@ -17,7 +17,7 @@ function App() {
                 title={"Seid dabei auf unserem ersten großen Abenteuer"}
                 subtitle={"30 Tage Portugal & Spanien"}
             />
-            <StoryLine/>
+            {/*<StoryLine/>*/}
         </div>
     );
 }
