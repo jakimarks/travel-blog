@@ -22,13 +22,13 @@ function StoryHeader({title, subtitle}: StoryHeaderProps) {
 
     return (
         <div className="story-header" style={{opacity: headerOpacity}}>
-            <div className="subtitle">
-                <div className="line"/>
-                <span className="text">
+            <div className="story-header__subtitle">
+                <div className="story-header__line"/>
+                <span className="story-header__subtitle__text">
                     {subtitle}
                 </span>
             </div>
-            <span className="title">
+            <span className="story-header__title">
                 {title}
             </span>
         </div>

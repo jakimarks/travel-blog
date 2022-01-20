@@ -1,21 +1,23 @@
 .story-header {
     position: fixed;
     width: 70%;
-    height: 320px;
+    max-width: 1000px;
+    margin: 12% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     gap: 32px;
-    padding-top: 220px;
-    padding-left: 20%;
 }
 
-.title {
+.story-header__title {
+    text-transform: capitalize;
     height: 208px;
     align-self: stretch;
     flex-grow: 0;
-    font-family: AbhayaLibre;
+    font-family: Abhaya Libre;
     font-size: 88px;
     font-weight: normal;
     font-stretch: normal;
@@ -26,7 +28,7 @@
     color: #fff;
 }
 
-.subtitle {
+.story-header__subtitle {
     height: 24px;
     align-self: stretch;
     flex-grow: 0;
@@ -38,14 +40,15 @@
     padding: 0;
 }
 
-.story-header .line {
+.story-header__line {
     width: 72px;
     height: 2px;
     flex-grow: 0;
     background-color: #fbd784;
 }
 
-.subtitle .text {
+.story-header__subtitle__text {
+    text-transform: uppercase;
     height: 24px;
     flex-grow: 1;
     font-family: Amiko;
@@ -57,31 +60,4 @@
     letter-spacing: 6px;
     text-align: left;
     color: #fbd784;
-}
-
-.scroll-down {
-    height: 24px;
-    align-self: stretch;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 12px;
-    padding: 0;
-}
-
-.scroll-down .text {
-    width: 79px;
-    height: 24px;
-    flex-grow: 0;
-    font-family: Amiko;
-    font-size: 18px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
 }
