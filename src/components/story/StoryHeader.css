@@ -1,6 +1,6 @@
 .story-header {
     position: fixed;
-    width: 70%;
+    width: 60%;
     max-width: 1000px;
     margin: 12% auto; /* Will not center vertically and won't work in IE6/7. */
     left: 0;

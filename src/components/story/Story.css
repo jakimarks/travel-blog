@@ -1,0 +1,33 @@
+.story__bg-clouds {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 1100px;
+    object-fit: cover;
+}
+
+.story__mg-mountains {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    top: 53%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.story__fg-hill {
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    top: 48%;
+    min-height: 800px;
+    object-fit: cover;
+}
+
+.story__gradient-top {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    background-image: linear-gradient(165deg, rgba(19, 48, 43, 0.59) 0%, rgba(108, 108, 108, 0) 63.25%);
+}
