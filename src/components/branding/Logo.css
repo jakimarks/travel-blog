@@ -1,0 +1,24 @@
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    color: white;
+}
+
+.logo__text {
+    font-family: Amatic SC;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+.logo__arrows {
+    font-size: 24px;
+    font-weight: bold;
+}
