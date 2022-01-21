@@ -3,6 +3,7 @@ import './App.css';
 import WebFont from 'webfontloader';
 import Story from "./components/story/Story";
 import Logo from "./components/branding/Logo";
+import NavBar from "./components/navbar/NavBar";
 
 function App() {
     useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
     return (
         <div className="app">
             <Logo/>
+            <NavBar/>
             <Story/>
         </div>
     );
