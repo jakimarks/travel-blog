@@ -3,3 +3,14 @@ html {
     min-height: 2000px;
     font-size: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
