@@ -1,5 +1,6 @@
 import './NavBar.css'
 import NavBarEntry from "./NavBarEntry";
+import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 
 function NavBar() {
     return (

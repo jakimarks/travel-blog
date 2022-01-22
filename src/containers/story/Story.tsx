@@ -1,9 +1,10 @@
-import StoryHeader from "./StoryHeader";
+import StoryHeader from "../../components/story/StoryHeader";
 import React from "react";
 import BgClouds from '../../assets/clouds.png';
 import MgMountains from '../../assets/mountains.png';
 import FgHill from '../../assets/hill-anna.png';
 import './Story.css';
+import StoryLine from "../../components/story/StoryLine";
 
 function Story() {
     return (
@@ -16,7 +17,7 @@ function Story() {
                 title={"Seid dabei auf unserem ersten großen Abenteuer"}
                 subtitle={"30 Tage Portugal & Spanien"}
             />
-            {/*<StoryLine/>*/}
+            <StoryLine/>
         </div>
     )
 }

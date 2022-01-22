@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import './App.css';
 import WebFont from 'webfontloader';
-import Story from "./components/story/Story";
+import Story from "./containers/story/Story";
 import Logo from "./components/branding/Logo";
 import NavBar from "./components/navbar/NavBar";
 

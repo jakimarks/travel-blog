@@ -6,9 +6,9 @@ type NavBarEntryProps = {
 
 function NavBarEntry({text}: NavBarEntryProps) {
     return (
-        <span className="navbar__entry">
-            {text}
-        </span>
+        <p className="navbar__entry">
+            <a href="#home">{text}</a>
+        </p>
     )
 }
 
