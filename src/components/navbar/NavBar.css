@@ -5,11 +5,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
-    padding: 48px 72px;
 }
 
 .navbar__icon {
+    align-items: flex-start;
     color: white;
     float: right;
-    padding: 48px 48px;
 }

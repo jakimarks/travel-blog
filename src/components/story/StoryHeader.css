@@ -1,78 +1,64 @@
 .story-header {
-    z-index: -2;
-    position: fixed;
-    width: 60%;
-    max-width: 1000px;
-    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
-    left: 0;
-    right: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 32px;
+    position: fixed;
+    z-index: -2;
+    gap: 24px;
+    padding-top: 24px;
+    left: 50%;
 }
 
 .story-header__title {
     text-transform: capitalize;
-    height: 208px;
-    align-self: stretch;
-    flex-grow: 0;
     font-family: var(--font-secondary);
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
 }
 
 .story-header__subtitle {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    padding: 0;
 }
 
 .story-header__line {
     height: 2px;
-    background-color: #fbd784;
+    background-color: var(--font-color-secondary);
 }
 
 .story-header__subtitle__text {
+    color: var(--font-color-secondary);
     text-transform: uppercase;
-    flex-grow: 3;
     font-family: var(--font-primary);
     font-weight: bold;
-    letter-spacing: 0.1em;
-    color: #fbd784;
+    /*flex-grow: 3;*/
+    /*letter-spacing: 0.1em;*/
 }
 
 /* Responsiveness */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1200px) {
+    .story-header{
+        max-width: 1000px;
+        margin-left: -500px; /* Half of the width */
+    }
     .story-header__title {
         font-size: 88px;
     }
-
     .story-header__subtitle__text {
         font-size: 18px;
     }
-
     .story-header__line {
         width: 72px;
     }
-
     .story-header__subtitle {
         gap: 32px;
     }
 }
 
-/* Responsiveness */
-
 @media screen and (max-width: 1200px) {
+    .story-header{
+        max-width: 680px;
+        margin-left: -340px; /* Half of the width */
+    }
     .story-header__title {
         font-size: 60px;
     }
@@ -88,6 +74,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .story-header{
+        max-width: 320px;
+        margin-left: -160px; /* Half of the width */
+    }
     .story-header__title {
         font-size: 34px;
     }
