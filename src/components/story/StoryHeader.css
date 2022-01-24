@@ -29,8 +29,7 @@
     text-transform: uppercase;
     font-family: var(--font-primary);
     font-weight: bold;
-    /*flex-grow: 3;*/
-    /*letter-spacing: 0.1em;*/
+    letter-spacing: 0.1em;
 }
 
 /* Responsiveness */
