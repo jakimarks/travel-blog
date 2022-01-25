@@ -1,8 +1,11 @@
 html {
     background-color: var(--color-bg);
-    min-height: 2000px;
     font-size: 100%;
     color: var(--font-color-primary);
+}
+
+body, #root, html, .app {
+    height: 100%;
 }
 
 a {
@@ -20,22 +23,57 @@ a:hover {
     justify-content: space-between;
 }
 
+.footer {
+    position: relative;
+    top: 3000px;
+    font-family: var(--font-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__right__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--font-color-secondary);
+}
+
+.footer__right__links {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
 /* Responsiveness */
 
 @media screen and (min-width: 1200px) {
-    .header {
+    .header, .footer {
         padding: 32px 48px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .header {
+    .header, .footer {
         padding: 24px 32px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .header {
+    .header, .footer {
         padding: 16px 16px;
     }
 }
