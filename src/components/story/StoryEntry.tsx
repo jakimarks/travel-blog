@@ -13,7 +13,7 @@ type StoryEntryProps = {
 function StoryEntry({day, title, subtitle, description}: StoryEntryProps) {
     return (
         <div className="story-entry">
-            <div className="content">
+            <div className="story-entry__content">
                 <span className="story-entry__day">
                     {day}
                 </span>
@@ -33,6 +33,7 @@ function StoryEntry({day, title, subtitle, description}: StoryEntryProps) {
                     mehr lesen
                 </span>
             </div>
+            <img className="story-entry__image" alt="Snapshot of the day"/>
         </div>
     );
 }
