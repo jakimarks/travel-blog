@@ -16,6 +16,7 @@ function StoryLine() {
             />
             <StoryEntry
                 day={"02"}
+                orientation={"right"}
                 title={"Stadterkundung"}
                 subtitle={"Porto, Portugal"}
                 description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum risus phasellus posuere pharetra,\n" +
