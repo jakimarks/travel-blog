@@ -4,5 +4,7 @@
     justify-content: center;
     align-items: stretch;
     gap: 200px;
-    padding: 1000px 0;
+    position: relative;
+    top: 1000px;
+    z-index: 2;
 }

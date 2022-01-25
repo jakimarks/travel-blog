@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './StoryHeader.css'
+import {MdSouth} from "react-icons/md";
 
 type StoryHeaderProps = {
     title: string,
@@ -31,6 +32,10 @@ function StoryHeader({title, subtitle}: StoryHeaderProps) {
             <span className="story-header__title">
                 {title}
             </span>
+            <a href={"#story-line"} className="story-header__link">
+                <span>hier lang</span>
+                <MdSouth size={24} className="story-header__link__arrow"/>
+            </a>
         </div>
     );
 }

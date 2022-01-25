@@ -4,7 +4,7 @@ import React from "react";
 
 function StoryLine() {
     return (
-        <div className="story-line">
+        <div id="story-line" className="story-line">
             <StoryEntry
                 day={"01"}
                 title={"Ankunft in Porto"}
