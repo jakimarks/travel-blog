@@ -5,6 +5,27 @@
     align-items: stretch;
     gap: 200px;
     position: relative;
-    top: 1000px;
     z-index: 2;
+}
+
+/* Responsiveness*/
+@media screen and (min-width: 1200px) {
+    .story-line {
+        top: 1000px;
+        gap: 200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .story-line {
+        top: 700px;
+        gap: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .story-line {
+        top: 700px;
+        gap: 100px;
+    }
 }

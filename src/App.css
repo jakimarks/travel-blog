@@ -54,7 +54,6 @@ a:hover {
 .footer__right__links {
     font-size: 18px;
     display: flex;
-    flex-direction: row;
     gap: 24px;
 }
 
@@ -64,16 +63,28 @@ a:hover {
     .header, .footer {
         padding: 32px 48px;
     }
+    .footer__right__links {
+        flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .header, .footer {
         padding: 24px 32px;
     }
+    .footer__right__links {
+        flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .header, .footer {
         padding: 16px 16px;
+    }
+    .footer__right__links {
+        flex-direction: column;
+    }
+    .footer {
+        align-items: baseline;
     }
 }
