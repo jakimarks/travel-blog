@@ -1,19 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import WebFont from 'webfontloader';
-import Story from "./containers/story/Story";
-import Logo from "./components/branding/Logo";
-import NavBar from "./components/navbar/NavBar";
+import Story from "./components/story/Story";
+import Header from "./containers/header/Header";
+import Footer from "./containers/footer/Footer";
 
 function App() {
-    const [width, setWindowWidth] = useState(0);
-
-    useEffect(() => {
-        updateDimensions();
-        window.addEventListener("resize", updateDimensions);
-        return () => window.removeEventListener("resize", updateDimensions);
-    }, []);
-
     useEffect(() => {
         WebFont.load({
             google: {
@@ -22,37 +14,11 @@ function App() {
         });
     }, []);
 
-
-    const updateDimensions = () => {
-        const width = window.innerWidth
-        setWindowWidth(width)
-    }
-
-    const responsive = {
-        expandNavBar: width > 700
-    }
-
     return (
         <div className="app">
-            <div className="header">
-                <Logo/>
-                <NavBar expand={responsive.expandNavBar}/>
-            </div>
+            <Header/>
             <Story/>
-            <div className="footer">
-                <div className="footer__left">
-                    <Logo/>
-                    <span>"Einfach mal machen, könnte ja gut werden."</span>
-                </div>
-                <div className="footer__right">
-                    <span className="footer__right__title">Mehr auf unserem Blog</span>
-                    <div className="footer__right__links">
-                        <a className="footer__right__link" href="#">Kontakt</a>
-                        <a className="footer__right__link" href="#">Impressum</a>
-                        <a className="footer__right__link" href="#">Datenschutzerklärung</a>
-                    </div>
-                </div>
-            </div>
+            <Footer/>
         </div>
     );
 }

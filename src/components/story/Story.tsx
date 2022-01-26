@@ -1,10 +1,10 @@
-import StoryHeader from "../../components/story/StoryHeader";
+import StoryHeader from "./StoryHeader";
 import React from "react";
 import BgClouds from '../../assets/clouds.png';
 import MgMountains from '../../assets/mountains.png';
 import FgHill from '../../assets/hill-anna.png';
 import './Story.css';
-import StoryLine from "../../components/story/StoryLine";
+import StoryLine from "./StoryLine";
 
 function Story() {
     return (
