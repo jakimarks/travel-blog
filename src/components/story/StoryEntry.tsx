@@ -36,9 +36,11 @@ function StoryEntry({day, title, subtitle, description, orientation = "left"}: S
     )
     const image = <img className="story-entry__image" alt="Snapshot of the day"/>
 
+    const className = orientation === "left" ? "story-entry story-entry--left" : "story-entry story-entry--right"
+
     return (
-        <div className="story-entry">
-            { orientation === "left" ? [content, image] : [image, content]}
+        <div className={className}>
+            {[content, image]}
         </div>
     );
 }

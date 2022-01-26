@@ -3,6 +3,10 @@
     flex-direction: row;
 }
 
+.story-entry--right {
+    flex-direction: row-reverse;
+}
+
 .story-entry__content {
     display: flex;
     flex-direction: column;
