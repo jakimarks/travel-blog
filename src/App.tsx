@@ -7,7 +7,6 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./containers/home/Home";
 import About from "./containers/about/About";
 import Blog from "./containers/blog/Blog";
-import Contact from "./containers/contact/Contact";
 import Imprint from "./containers/imprint/Imprint";
 import DataPrivacy from "./containers/data-privacy/DataPrivacy";
 
@@ -25,12 +24,11 @@ function App() {
             <div className="app">
                 <Header/>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/blog" element={<Blog/>}/>
-                    <Route path="/contact" element={<Contact/>}/>
-                    <Route path="/imprint" element={<Imprint/>}/>
-                    <Route path="/data-privacy" element={<DataPrivacy/>}/>
+                    <Route path="/travel-blog" element={<Home/>}/>
+                    <Route path="/travel-blog/about" element={<About/>}/>
+                    <Route path="/travel-blog/blog" element={<Blog/>}/>
+                    <Route path="/travel-blog/imprint" element={<Imprint/>}/>
+                    <Route path="/travel-blog/data-privacy" element={<DataPrivacy/>}/>
                 </Routes>
                 <Footer/>
             </div>

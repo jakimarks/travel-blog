@@ -12,8 +12,8 @@ function NavBar({expand}: NavBarProps) {
     )
     const entries = (
         <div className="navbar">
-            <Link to="/about">Wer wir sind</Link>
-            <Link to="/blog">Blog</Link>
+            <Link to="/travel-blog/about">Wer wir sind</Link>
+            <Link to="/travel-blog/blog">Blog</Link>
         </div>
     )
     return expand ? entries : burgerMenu;

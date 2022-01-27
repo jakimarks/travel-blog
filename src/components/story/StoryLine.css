@@ -1,10 +1,10 @@
 .story-line {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
     gap: 200px;
-    position: relative;
     z-index: 2;
 }
 

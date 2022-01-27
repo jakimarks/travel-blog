@@ -13,7 +13,7 @@ const Header: FunctionComponent<Props> = (props) => {
     // TODO make responsive expand navbar
     return (
         <div className="header">
-            <Link to="/">
+            <Link to="/travel-blog">
                 <Logo/>
             </Link>
             <NavBar expand={true}/>

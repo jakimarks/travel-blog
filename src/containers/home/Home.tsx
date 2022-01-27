@@ -1,15 +1,16 @@
-import React, { FunctionComponent } from 'react';
+import React, {FunctionComponent} from 'react';
 import Story from "../../components/story/Story";
 
-interface OwnProps {}
+interface OwnProps {
+}
 
 type Props = OwnProps;
 
 const Home: FunctionComponent<Props> = (props) => {
 
-  return (
-      <Story/>
-  );
+    return (
+        <Story/>
+    );
 };
 
 export default Home;

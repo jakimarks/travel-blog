@@ -6,7 +6,7 @@ type Props = OwnProps;
 
 const About: FunctionComponent<Props> = (props) => {
 
-  return (<h1>About</h1>);
+  return (<h1>Wer wir sind</h1>);
 };
 
 export default About;

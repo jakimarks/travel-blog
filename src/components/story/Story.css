@@ -1,3 +1,7 @@
+.story {
+    height: 3000px;
+}
+
 .story__background {
     position: absolute;
     top: 0;
