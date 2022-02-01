@@ -8,7 +8,7 @@
 }
 
 .story__bg-clouds {
-    z-index: -2;
+    z-index: -1;
     position: absolute;
     width: 100vw;
     height: 1100px;
@@ -16,7 +16,7 @@
 }
 
 .story__mg-mountains {
-    z-index: -2;
+    z-index: -1;
     position: absolute;
     width: 100vw;
     top: 53%;
@@ -25,7 +25,7 @@
 }
 
 .story__fg-hill {
-    z-index: -1;
+    z-index: 1;
     position: absolute;
     width: 100vw;
     top: 48%;
@@ -34,7 +34,7 @@
 }
 
 .story__gradient-top {
-    z-index: -2;
+    z-index: -1;
     position: absolute;
     width: 100vw;
     height: 600px;

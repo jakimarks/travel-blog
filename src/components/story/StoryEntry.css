@@ -1,4 +1,5 @@
 .story-entry {
+    z-index: inherit;
     display: flex;
     flex-direction: row;
 }
