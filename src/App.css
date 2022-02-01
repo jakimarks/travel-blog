@@ -26,3 +26,21 @@ a:hover {
 .main-content {
     flex: 1;
 }
+
+@media screen and (min-width: 1200px) {
+    .main-content {
+        padding: 0 48px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-content {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-content {
+        padding: 0 16px;
+    }
+}
