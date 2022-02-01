@@ -23,13 +23,15 @@ function App() {
         <BrowserRouter>
             <div className="app">
                 <Header/>
-                <Routes>
-                    <Route path="/travel-blog" element={<Home/>}/>
-                    <Route path="/travel-blog/about" element={<About/>}/>
-                    <Route path="/travel-blog/blog" element={<Blog/>}/>
-                    <Route path="/travel-blog/imprint" element={<Imprint/>}/>
-                    <Route path="/travel-blog/data-privacy" element={<DataPrivacy/>}/>
-                </Routes>
+                <div className="main-content">
+                    <Routes>
+                        <Route path="/travel-blog" element={<Home/>}/>
+                        <Route path="/travel-blog/about" element={<About/>}/>
+                        <Route path="/travel-blog/blog" element={<Blog/>}/>
+                        <Route path="/travel-blog/imprint" element={<Imprint/>}/>
+                        <Route path="/travel-blog/data-privacy" element={<DataPrivacy/>}/>
+                    </Routes>
+                </div>
                 <Footer/>
             </div>
         </BrowserRouter>
