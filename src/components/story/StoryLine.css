@@ -10,21 +10,18 @@
 /* Responsiveness*/
 @media screen and (min-width: 1200px) {
     .story-line {
-        padding-top: 1000px;
         gap: 200px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .story-line {
-       padding-top: 700px;
         gap: 150px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .story-line {
-        padding-top: 700px;
         gap: 100px;
     }
 }

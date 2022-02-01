@@ -40,3 +40,21 @@
     height: 600px;
     background-image: linear-gradient(165deg, rgba(19, 48, 43, 0.59) 0%, rgba(108, 108, 108, 0) 63.25%);
 }
+
+@media screen and (min-width: 1200px) {
+    .story-spacer {
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .story-spacer {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .story-spacer {
+        height: 700px;
+    }
+}
