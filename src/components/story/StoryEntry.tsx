@@ -1,21 +1,32 @@
 import React from 'react';
 import './StoryEntry.css'
 
-// TODO get rid of number completely and automatically calculate based on #entry
 // TODO add image
-type StoryEntryProps = {
-    day: string,
+export type StoryEntryProps = {
+    day: number,
     title: string,
     subtitle: string,
     description: string,
-    orientation?: "left" | "right"
 }
 
-function StoryEntry({day, title, subtitle, description, orientation = "left"}: StoryEntryProps) {
+const zeroFill = (number: number, width: number): string => {
+    width -= number.toString().length;
+    if (width > 0) {
+        return new Array(width + (/\./.test(number + '') ? 2 : 1)).join('0') + number;
+    }
+    return number + "";
+}
+
+const getOrientation = (day: number): ("left" | "right") => {
+    if (day % 2 !== 0) return "left"
+    else return "right"
+}
+
+function StoryEntry({day, title, subtitle, description}: StoryEntryProps) {
     const content = (
         <div className="story-entry__content">
             <span className="story-entry__day">
-                {day}
+                {zeroFill(day, 2)}
             </span>
             <div className="story-entry__subtitle">
                 <div className="subtitle__line"/>
@@ -36,7 +47,7 @@ function StoryEntry({day, title, subtitle, description, orientation = "left"}: S
     )
     const image = <img className="story-entry__image" alt="Snapshot of the day"/>
 
-    const className = orientation === "left" ? "story-entry story-entry--left" : "story-entry story-entry--right"
+    const className = getOrientation(day) === "left" ? "story-entry story-entry--left" : "story-entry story-entry--right"
 
     return (
         <div className={className}>
