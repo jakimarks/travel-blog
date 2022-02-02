@@ -25,11 +25,11 @@ function App() {
                 <Header/>
                 <div className="main-content">
                     <Routes>
-                        <Route path="/travel-blog" element={<Home/>}/>
-                        <Route path="/travel-blog/about" element={<About/>}/>
-                        <Route path="/travel-blog/blog" element={<Blog/>}/>
-                        <Route path="/travel-blog/imprint" element={<Imprint/>}/>
-                        <Route path="/travel-blog/data-privacy" element={<DataPrivacy/>}/>
+                        <Route path={process.env.PUBLIC_URL + '/'} element={<Home/>}/>
+                        <Route path={process.env.PUBLIC_URL + '/about'} element={<About/>}/>
+                        <Route path={process.env.PUBLIC_URL + '/blog'} element={<Blog/>}/>
+                        <Route path={process.env.PUBLIC_URL + '/imprint'} element={<Imprint/>}/>
+                        <Route path={process.env.PUBLIC_URL + '/data-privacy'} element={<DataPrivacy/>}/>
                     </Routes>
                 </div>
                 <Footer/>
