@@ -15,10 +15,10 @@ const Footer: FunctionComponent<Props> = (props) => {
             <span>"Einfach mal machen, könnte ja gut werden."</span>
         </div>
         <div className="footer__right">
-            <Link to={process.env.PUBLIC_URL + '/blog'} className="footer__right__title">Mehr auf unserem Blog</Link>
+            <Link to='/blog' className="footer__right__title">Mehr auf unserem Blog</Link>
             <div className="footer__right__links">
-                <Link className="footer__right__link" to="/travel-blog/imprint">Impressum</Link>
-                <Link className="footer__right__link" to="/travel-blog/data-privacy">Datenschutzerklärung</Link>
+                <Link className="footer__right__link" to="imprint">Impressum</Link>
+                <Link className="footer__right__link" to="data-privacy">Datenschutzerklärung</Link>
             </div>
         </div>
     </div>);

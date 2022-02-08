@@ -20,16 +20,16 @@ function App() {
     }, []);
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/travel-blog">
             <div className="app">
                 <Header/>
                 <div className="main-content">
                     <Routes>
-                        <Route path={process.env.PUBLIC_URL + '/'} element={<Home/>}/>
-                        <Route path={process.env.PUBLIC_URL + '/about'} element={<About/>}/>
-                        <Route path={process.env.PUBLIC_URL + '/blog'} element={<Blog/>}/>
-                        <Route path={process.env.PUBLIC_URL + '/imprint'} element={<Imprint/>}/>
-                        <Route path={process.env.PUBLIC_URL + '/data-privacy'} element={<DataPrivacy/>}/>
+                        <Route path='/' element={<Home/>}/>
+                        <Route path='/about' element={<About/>}/>
+                        <Route path='/blog' element={<Blog/>}/>
+                        <Route path='/imprint' element={<Imprint/>}/>
+                        <Route path='/data-privacy' element={<DataPrivacy/>}/>
                     </Routes>
                 </div>
                 <Footer/>

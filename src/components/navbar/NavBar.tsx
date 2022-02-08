@@ -12,8 +12,8 @@ function NavBar({expand}: NavBarProps) {
     )
     const entries = (
         <div className="navbar">
-            <Link to={process.env.PUBLIC_URL + '/about'}>Wer wir sind</Link>
-            <Link to={process.env.PUBLIC_URL + '/blog'}>Blog</Link>
+            <Link to='/about'>Wer wir sind</Link>
+            <Link to='/blog'>Blog</Link>
         </div>
     )
     return expand ? entries : burgerMenu;
