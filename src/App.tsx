@@ -5,8 +5,8 @@ import Header from "./containers/header/Header";
 import Footer from "./containers/footer/Footer";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./containers/home/Home";
-import About from "./containers/about/About";
-import Blog from "./containers/blog/Blog";
+import AboutView from "./containers/about/AboutView";
+import BlogView from "./containers/blog/BlogView";
 import Imprint from "./containers/imprint/Imprint";
 import DataPrivacy from "./containers/data-privacy/DataPrivacy";
 import BlogPostView from "./containers/blog/BlogPostView";
@@ -28,9 +28,9 @@ function App() {
                 <div className="main-content">
                     <Routes>
                         <Route path='/' element={<Home/>}/>
-                        <Route path='/about' element={<About/>}/>
+                        <Route path='/about' element={<AboutView/>}/>
                         <Route path='/blog/:slug' element={<BlogPostView/>}/>
-                        <Route path='/blog' element={<Blog/>}/>
+                        <Route path='/blog' element={<BlogView/>}/>
                         <Route path='/imprint' element={<Imprint/>}/>
                         <Route path='/data-privacy' element={<DataPrivacy/>}/>
                     </Routes>

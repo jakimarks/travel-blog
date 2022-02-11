@@ -3,7 +3,7 @@ import blogPosts from '../../data/blog/blog-posts.json'
 import BlogPostPreview from "../../components/blog/BlogPostPreview";
 import {BlogPost} from "./BlogPostView";
 
-function Blog() {
+function BlogView() {
     const entries: Array<BlogPost> = blogPosts.blog_posts
 
     const children = entries.map((entry) => {
@@ -27,4 +27,4 @@ function Blog() {
     );
 }
 
-export default Blog;
+export default BlogView;

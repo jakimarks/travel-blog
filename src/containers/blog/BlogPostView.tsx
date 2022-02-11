@@ -1,6 +1,7 @@
 import React from 'react';
 import blogPosts from '../../data/blog/blog-posts.json'
 import {useParams} from "react-router-dom";
+import DateDisplay from "../../components/DateDisplay";
 
 export type BlogPost = {
     slug: string,
@@ -23,7 +24,7 @@ function BlogPostView() {
         <div className="blog-post">
             <h1>{blogPost.title}</h1>
             <div className="blog_post__meta">
-                <p>{blogPost.created_at}</p>
+                <DateDisplay timestamp={blogPost.created_at}/>
                 <p>{blogPost.created_by}</p>
             </div>
             <p>{blogPost.content}</p>
