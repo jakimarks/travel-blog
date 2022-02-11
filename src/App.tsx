@@ -9,6 +9,8 @@ import About from "./containers/about/About";
 import Blog from "./containers/blog/Blog";
 import Imprint from "./containers/imprint/Imprint";
 import DataPrivacy from "./containers/data-privacy/DataPrivacy";
+import BlogPostView from "./containers/blog/BlogPostView";
+
 
 function App() {
     useEffect(() => {
@@ -27,6 +29,7 @@ function App() {
                     <Routes>
                         <Route path='/' element={<Home/>}/>
                         <Route path='/about' element={<About/>}/>
+                        <Route path='/blog/:slug' element={<BlogPostView/>}/>
                         <Route path='/blog' element={<Blog/>}/>
                         <Route path='/imprint' element={<Imprint/>}/>
                         <Route path='/data-privacy' element={<DataPrivacy/>}/>

@@ -1,12 +1,30 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
+import blogPosts from '../../data/blog/blog-posts.json'
+import BlogPostPreview from "../../components/blog/BlogPostPreview";
+import {BlogPost} from "./BlogPostView";
 
-interface OwnProps {}
+function Blog() {
+    const entries: Array<BlogPost> = blogPosts.blog_posts
 
-type Props = OwnProps;
-
-const Blog: FunctionComponent<Props> = (props) => {
-
-  return (<h1>Blog</h1>);
-};
+    const children = entries.map((entry) => {
+        return (
+            <BlogPostPreview
+                slug={entry.slug}
+                title={entry.title}
+                content={entry.content}
+                created_at={entry.created_at}
+                created_by={entry.created_by}
+            />
+        )
+    });
+    return (
+        <div className="blog">
+            <h1>Blog</h1>
+            <div className="blog__entries">
+                {children}
+            </div>
+        </div>
+    );
+}
 
 export default Blog;
