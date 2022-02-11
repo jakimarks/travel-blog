@@ -13,6 +13,7 @@ function StoryLine() {
                 title={entry.title}
                 subtitle={entry.subtitle}
                 description={entry.description}
+                slug={entry.slug}
             />
         )
     });

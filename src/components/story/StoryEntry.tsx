@@ -1,5 +1,6 @@
 import React from 'react';
 import './StoryEntry.css'
+import {Link} from "react-router-dom";
 
 // TODO add image
 export type StoryEntryProps = {
@@ -7,6 +8,7 @@ export type StoryEntryProps = {
     title: string,
     subtitle: string,
     description: string,
+    slug?: string
 }
 
 const zeroFill = (number: number, width: number): string => {
@@ -22,7 +24,7 @@ const getOrientation = (day: number): ("left" | "right") => {
     else return "right"
 }
 
-function StoryEntry({day, title, subtitle, description}: StoryEntryProps) {
+function StoryEntry({day, title, subtitle, description, slug}: StoryEntryProps) {
     const content = (
         <div className="story-entry__content">
             <span className="story-entry__day">
@@ -40,9 +42,10 @@ function StoryEntry({day, title, subtitle, description}: StoryEntryProps) {
             <span className="story-entry__description">
                 {description}
             </span>
-            <span className="story-entry__link">
-                mehr lesen
-            </span>
+            {slug ?
+                <Link className="story-entry__link" to={`/blog/${slug}`}>mehr lesen</Link>
+                : null
+            }
         </div>
     )
     const image = <img className="story-entry__image" alt="Snapshot of the day"/>
