@@ -15,3 +15,7 @@
     color: white;
     float: right;
 }
+
+.navbar > .active {
+    color: var(--font-color-secondary);
+}

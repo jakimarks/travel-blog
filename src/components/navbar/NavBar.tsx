@@ -1,6 +1,6 @@
 import './NavBar.css'
 import {MdMenu} from 'react-icons/md';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 type NavBarProps = {
     expand: boolean
@@ -12,8 +12,8 @@ function NavBar({expand}: NavBarProps) {
     )
     const entries = (
         <div className="navbar">
-            <Link to='/about'>Wer wir sind</Link>
-            <Link to='/blog'>Blog</Link>
+            <NavLink to='/about'>Wer wir sind</NavLink>
+            <NavLink to='/blog'>Blog</NavLink>
         </div>
     )
     return expand ? entries : burgerMenu;
