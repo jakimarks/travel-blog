@@ -1,8 +1,9 @@
 import React from 'react';
 import blogPosts from '../../data/blog/blog-posts.json'
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import BlogPostMetaView from "../../components/BlogPostMetaView";
 import './BlogPostView.css'
+import {MdWest} from "react-icons/md";
 
 export type BlogPost = {
     slug: string,
@@ -23,9 +24,17 @@ function BlogPostView() {
 
     } else return (
         <div className="blog-post">
+            <Link className="blog-post__back" to="/blog">
+                <MdWest size={20}/>
+                zur Übersicht
+            </Link>
             <BlogPostMetaView created_at={blogPost.created_at} created_by={blogPost.created_by}/>
             <h2>{blogPost.title}</h2>
-            <p className="blog_post__description">{blogPost.content}</p>
+            <p className="blog-post__description">{blogPost.content}</p>
+            <Link className="blog-post__back" to="/blog">
+                <MdWest size={20}/>
+                zur Übersicht
+            </Link>
         </div>
     )
 }
