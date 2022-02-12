@@ -1,6 +1,5 @@
 .read-more-link {
     font-family: var(--font-primary);
-    color: var(--font-color-secondary);
     font-weight: bold;
     padding-top: 8px;
     display: flex;

@@ -60,18 +60,19 @@ h2 {
 
 h3 {
     color: var(--font-color-secondary);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     font-size: 2.8vw;
     font-weight: bold;
 }
 
 h4 {
     color: var(--font-color-secondary);
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     font-size: 2.0vw;
     font-weight: bold;
 }
 
 p {
     font-family: var(--font-primary);
+    line-height: 1.78;
 }
