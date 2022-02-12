@@ -2,6 +2,7 @@ import React from 'react';
 import blogPosts from '../../data/blog/blog-posts.json'
 import {useParams} from "react-router-dom";
 import BlogPostMetaView from "../../components/BlogPostMetaView";
+import './BlogPostView.css'
 
 export type BlogPost = {
     slug: string,
@@ -24,7 +25,7 @@ function BlogPostView() {
         <div className="blog-post">
             <BlogPostMetaView created_at={blogPost.created_at} created_by={blogPost.created_by}/>
             <h2>{blogPost.title}</h2>
-            <p>{blogPost.content}</p>
+            <p className="blog_post__description">{blogPost.content}</p>
         </div>
     )
 }

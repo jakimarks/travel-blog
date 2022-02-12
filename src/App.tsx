@@ -10,6 +10,7 @@ import BlogView from "./containers/blog/BlogView";
 import Imprint from "./containers/imprint/Imprint";
 import DataPrivacy from "./containers/data-privacy/DataPrivacy";
 import BlogPostView from "./containers/blog/BlogPostView";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
@@ -26,14 +27,16 @@ function App() {
             <div className="app">
                 <Header/>
                 <div className="main-content">
-                    <Routes>
-                        <Route path='/' element={<Home/>}/>
-                        <Route path='/about' element={<AboutView/>}/>
-                        <Route path='/blog/:slug' element={<BlogPostView/>}/>
-                        <Route path='/blog' element={<BlogView/>}/>
-                        <Route path='/imprint' element={<Imprint/>}/>
-                        <Route path='/data-privacy' element={<DataPrivacy/>}/>
-                    </Routes>
+                    <ScrollToTop>
+                        <Routes>
+                            <Route path='/' element={<Home/>}/>
+                            <Route path='/about' element={<AboutView/>}/>
+                            <Route path='/blog/:slug' element={<BlogPostView/>}/>
+                            <Route path='/blog' element={<BlogView/>}/>
+                            <Route path='/imprint' element={<Imprint/>}/>
+                            <Route path='/data-privacy' element={<DataPrivacy/>}/>
+                        </Routes>
+                    </ScrollToTop>
                 </div>
                 <Footer/>
             </div>
