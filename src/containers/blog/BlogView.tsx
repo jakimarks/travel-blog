@@ -19,7 +19,7 @@ function BlogView() {
     });
     return (
         <div className="blog">
-            <h1>Blog</h1>
+            <h1>Unser Blog</h1>
             <div className="blog__entries">
                 {children}
             </div>

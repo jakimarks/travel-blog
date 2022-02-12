@@ -1,8 +1,7 @@
 import React from 'react';
 import blogPosts from '../../data/blog/blog-posts.json'
 import {useParams} from "react-router-dom";
-import DateDisplay from "../../components/DateDisplay";
-import AuthorDisplay from "../../components/AuthorDisplay";
+import BlogPostMetaView from "../../components/BlogPostMetaView";
 
 export type BlogPost = {
     slug: string,
@@ -23,11 +22,8 @@ function BlogPostView() {
 
     } else return (
         <div className="blog-post">
-            <h1>{blogPost.title}</h1>
-            <div className="blog_post__meta">
-                <DateDisplay timestamp={blogPost.created_at}/>
-                <AuthorDisplay author={blogPost.created_by} />
-            </div>
+            <BlogPostMetaView created_at={blogPost.created_at} created_by={blogPost.created_by}/>
+            <h2>{blogPost.title}</h2>
             <p>{blogPost.content}</p>
         </div>
     )

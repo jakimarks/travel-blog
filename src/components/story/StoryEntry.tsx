@@ -1,6 +1,6 @@
 import React from 'react';
 import './StoryEntry.css'
-import {Link} from "react-router-dom";
+import ReadMoreLink from "../ReadMoreLink";
 
 // TODO add image
 export type StoryEntryProps = {
@@ -39,13 +39,10 @@ function StoryEntry({day, title, subtitle, description, slug}: StoryEntryProps) 
             <span className="story-entry__title">
                 {title}
             </span>
-            <span className="story-entry__description">
+            <p className="story-entry__description">
                 {description}
-            </span>
-            {slug ?
-                <Link className="story-entry__link" to={`/blog/${slug}`}>mehr lesen</Link>
-                : null
-            }
+            </p>
+            {slug ? <ReadMoreLink to={`/blog/${slug}`}/> : null}
         </div>
     )
     const image = <img className="story-entry__image" alt="Snapshot of the day"/>
