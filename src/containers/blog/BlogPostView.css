@@ -1,0 +1,13 @@
+.blog-post__description {
+    font-size: 18px;
+}
+
+.blog-post__back {
+    font-family: var(--font-primary);
+    font-weight: bold;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}

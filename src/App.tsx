@@ -1,25 +1,46 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
-import StoryHeader from "./components/story/StoryHeader";
-import StoryLine from "./components/story/StoryLine";
-import BgClouds from './assets/clouds.png';
-import MgMountains from './assets/mountains.png';
-import FgHill from './assets/hill-anna.png';
+import WebFont from 'webfontloader';
+import Header from "./containers/header/Header";
+import Footer from "./containers/footer/Footer";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./containers/home/Home";
+import AboutView from "./containers/about/AboutView";
+import BlogView from "./containers/blog/BlogView";
+import Imprint from "./containers/imprint/Imprint";
+import DataPrivacy from "./containers/data-privacy/DataPrivacy";
+import BlogPostView from "./containers/blog/BlogPostView";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
+    useEffect(() => {
+        WebFont.load({
+            google: {
+                families: ['Abhaya Libre', 'Amiko', 'Amatic SC']
+            }
+        });
+    }, []);
+
     return (
-        <div className="App">
-            <img className="bg-clouds" src={BgClouds} alt={"clouds"}/>
-            <img className="mg-mountains" src={MgMountains} alt={"mountains"}/>
-            <img className="fg-hill" src={FgHill} alt={"hill"}/>
-            <div className="gradient-top"/>
-            <div className="gradient-middle"/>
-            <StoryHeader
-                title={"Seid dabei auf unserem ersten großen Abenteuer"}
-                subtitle={"30 Tage Portugal & Spanien"}
-            />
-            <StoryLine/>
-        </div>
+        <BrowserRouter basename="/travel-blog">
+            <div className="app">
+                <Header/>
+                <div className="main-content">
+                    <ScrollToTop>
+                        <Routes>
+                            <Route path='/' element={<Home/>}/>
+                            <Route path='/about' element={<AboutView/>}/>
+                            <Route path='/blog/:slug' element={<BlogPostView/>}/>
+                            <Route path='/blog' element={<BlogView/>}/>
+                            <Route path='/imprint' element={<Imprint/>}/>
+                            <Route path='/data-privacy' element={<DataPrivacy/>}/>
+                        </Routes>
+                    </ScrollToTop>
+                </div>
+                <Footer/>
+            </div>
+        </BrowserRouter>
     );
 }
 

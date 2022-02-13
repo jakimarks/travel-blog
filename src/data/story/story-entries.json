@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "day": 1,
+      "title": "Ankunft in Porto",
+      "subtitle": "von Berlin Nach Porto, Portugal",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum risus phasellus posuere pharetra, elementum sit eget risus. Nibh morbi enim at suspendisse sit nunc tortor eget. Velit habitant feugiat eu nisl et. Sed vitae, eget ultricies nascetur condimentum urna. Viverra lectus blandit ullamcorper tortor tortor justo ultrices. Nunc suspendisse.",
+      "slug": "day-1"
+    },
+    {
+      "day": 2,
+      "title": "Stadterkundung",
+      "subtitle": "Porto, Portugal",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum risus phasellus posuere pharetra, elementum sit eget risus. Nibh morbi enim at suspendisse sit nunc tortor eget. Velit habitant feugiat eu nisl et. Sed vitae, eget ultricies nascetur condimentum urna. Viverra lectus blandit ullamcorper tortor tortor justo ultrices. Nunc suspendisse."
+    }
+  ]
+}

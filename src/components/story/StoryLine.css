@@ -1,9 +1,27 @@
 .story-line {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
     gap: 200px;
-    margin: 440px 229px 469px;
-    padding: 64px 0;
+}
+
+/* Responsiveness*/
+@media screen and (min-width: 1200px) {
+    .story-line {
+        gap: 200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .story-line {
+        gap: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .story-line {
+        gap: 100px;
+    }
 }
