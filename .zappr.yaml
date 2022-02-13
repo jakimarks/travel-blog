@@ -1,0 +1,7 @@
+approvals:
+  minimum: 1
+
+pull-request:
+  labels:
+    required:
+      - tested
