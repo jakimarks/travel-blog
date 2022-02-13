@@ -2,6 +2,7 @@ import React from 'react';
 import blogPosts from '../../data/blog/blog-posts.json'
 import BlogPostPreview from "../../components/blog/BlogPostPreview";
 import {BlogPost} from "./BlogPostView";
+import './BlogView.css'
 
 function BlogView() {
     const entries: Array<BlogPost> = blogPosts.blog_posts
@@ -14,6 +15,7 @@ function BlogView() {
                 content={entry.content}
                 created_at={entry.created_at}
                 created_by={entry.created_by}
+                header_image={entry.header_image}
             />
         )
     });

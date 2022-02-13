@@ -11,7 +11,7 @@ export type BlogPost = {
     created_by: string,
     title: string,
     content: string,
-    image?: string
+    header_image?: string
 }
 
 function BlogPostView() {
