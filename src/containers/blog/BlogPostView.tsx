@@ -11,6 +11,7 @@ export type BlogPost = {
     created_by: string,
     title: string,
     content: string,
+    header_image?: string
 }
 
 function BlogPostView() {
@@ -21,22 +22,27 @@ function BlogPostView() {
 
     if (!blogPost) {
         return <h1>Something went wrong.</h1>;
+    } else {
+        const images = require.context('../../assets/blog', true);
+        const headerImage = blogPost.header_image ? images(`./${blogPost.header_image}`) : undefined;
 
-    } else return (
-        <div className="blog-post">
-            <Link className="blog-post__back" to="/blog">
-                <MdWest size={20}/>
-                zur Übersicht
-            </Link>
-            <BlogPostMetaView created_at={blogPost.created_at} created_by={blogPost.created_by}/>
-            <h2>{blogPost.title}</h2>
-            <p className="blog-post__description">{blogPost.content}</p>
-            <Link className="blog-post__back" to="/blog">
-                <MdWest size={20}/>
-                zur Übersicht
-            </Link>
-        </div>
-    )
+        return (
+            <div className="blog-post">
+                <Link className="blog-post__back" to="/blog">
+                    <MdWest size={20}/>
+                    zur Übersicht
+                </Link>
+                { headerImage ? <img className="blog-post__header_image" src={headerImage} alt="post_header_image"/> : null}
+                <BlogPostMetaView created_at={blogPost.created_at} created_by={blogPost.created_by}/>
+                <h2>{blogPost.title}</h2>
+                <p className="blog-post__description">{blogPost.content}</p>
+                <Link className="blog-post__back" to="/blog">
+                    <MdWest size={20}/>
+                    zur Übersicht
+                </Link>
+            </div>
+        )
+    }
 }
 
 export default BlogPostView;

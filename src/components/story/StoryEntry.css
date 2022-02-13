@@ -72,7 +72,7 @@
 
 @media screen and (min-width: 1200px) {
     .story-entry {
-        padding: 0 240px;
+        padding: 0 140px;
         gap: 160px;
     }
     .story-entry__image {
@@ -86,7 +86,6 @@
 
 @media screen and (max-width: 1200px) {
     .story-entry {
-        padding: 0 40px;
         gap: 24px;
         flex-wrap: wrap;
     }
@@ -101,7 +100,6 @@
 
 @media screen and (max-width: 600px) {
     .story-entry {
-        padding: 0 40px;
         gap: 24px;
         flex-wrap: wrap;
     }
