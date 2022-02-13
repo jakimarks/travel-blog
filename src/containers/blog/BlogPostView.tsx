@@ -4,6 +4,7 @@ import {Link, useParams} from "react-router-dom";
 import BlogPostMetaView from "../../components/BlogPostMetaView";
 import './BlogPostView.css'
 import {MdWest} from "react-icons/md";
+import PostImage from '../../assets/blog/porto.jpeg'
 
 export type BlogPost = {
     slug: string,
@@ -28,6 +29,7 @@ function BlogPostView() {
                 <MdWest size={20}/>
                 zur Übersicht
             </Link>
+            <img className="blog-post__header_image" src={PostImage} alt="post_header_image" />
             <BlogPostMetaView created_at={blogPost.created_at} created_by={blogPost.created_by}/>
             <h2>{blogPost.title}</h2>
             <p className="blog-post__description">{blogPost.content}</p>
