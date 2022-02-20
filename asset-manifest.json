@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/travel-blog/static/css/main.a459d214.css",
+    "main.js": "/travel-blog/static/js/main.c59f0fa4.js",
+    "static/js/787.fa4a499b.chunk.js": "/travel-blog/static/js/787.fa4a499b.chunk.js",
+    "static/media/random.jpg": "/travel-blog/static/media/random.a209029b140175420ab3.jpg",
+    "static/media/mountains.png": "/travel-blog/static/media/mountains.d39b025abaa15d8dbe71.png",
+    "static/media/hill-anna.png": "/travel-blog/static/media/hill-anna.fc8e042692fec8c297bb.png",
+    "static/media/clouds.png": "/travel-blog/static/media/clouds.b44aa03b212322068c58.png",
+    "static/media/logo.svg": "/travel-blog/static/media/logo.5e917c9501db994db6e0403878c49b53.svg",
+    "index.html": "/travel-blog/index.html",
+    "main.a459d214.css.map": "/travel-blog/static/css/main.a459d214.css.map",
+    "main.c59f0fa4.js.map": "/travel-blog/static/js/main.c59f0fa4.js.map",
+    "787.fa4a499b.chunk.js.map": "/travel-blog/static/js/787.fa4a499b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a459d214.css",
+    "static/js/main.c59f0fa4.js"
+  ]
+}
