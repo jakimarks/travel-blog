@@ -10,16 +10,14 @@ type Props = OwnProps;
 
 const Footer: FunctionComponent<Props> = (props) => {
     return (<div className="footer">
-        <div className="footer__left">
+        <div className="footer__top">
             <Logo/>
             <span>"Einfach mal machen, könnte gut werden."</span>
         </div>
-        <div className="footer__right">
-            <Link to='/blog' className="footer__right__title">Mehr auf unserem Blog</Link>
-            <div className="footer__right__links">
-                <Link className="footer__right__link" to="imprint">Impressum</Link>
-                <Link className="footer__right__link" to="data-privacy">Datenschutzerklärung</Link>
-            </div>
+        <div className="footer__bottom">
+            <Link to="imprint">Impressum</Link>
+            <span>|</span>
+            <Link to="data-privacy">Datenschutzerklärung</Link>
         </div>
     </div>);
 };
