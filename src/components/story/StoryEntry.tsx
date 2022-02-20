@@ -8,7 +8,8 @@ export type StoryEntryProps = {
     title: string,
     subtitle: string,
     description: string,
-    slug?: string
+    slug?: string,
+    image?: string
 }
 
 const zeroFill = (number: number, width: number): string => {
@@ -24,7 +25,7 @@ const getOrientation = (day: number): ("left" | "right") => {
     else return "right"
 }
 
-function StoryEntry({day, title, subtitle, description, slug}: StoryEntryProps) {
+function StoryEntry({day, title, subtitle, description, slug, image}: StoryEntryProps) {
     const content = (
         <div className="story-entry__content">
             <span className="story-entry__day">
@@ -45,13 +46,18 @@ function StoryEntry({day, title, subtitle, description, slug}: StoryEntryProps) 
             {slug ? <ReadMoreLink to={`/blog/${slug}`}/> : null}
         </div>
     )
-    const image = <img className="story-entry__image" alt="Snapshot of the day"/>
 
     const className = getOrientation(day) === "left" ? "story-entry story-entry--left" : "story-entry story-entry--right"
 
+    const images = require.context('../../assets/blog', true);
+    const img = image ? images(`./${image}`) : undefined;
+
     return (
         <div className={className}>
-            {[content, image]}
+            {[
+                content,
+                img ? <img className="story-entry__image" alt="Snapshot of the day" src={img}/> : undefined
+            ]}
         </div>
     );
 }

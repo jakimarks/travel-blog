@@ -14,6 +14,7 @@ function StoryLine() {
                 subtitle={entry.subtitle}
                 description={entry.description}
                 slug={entry.slug}
+                image={entry.image}
             />
         )
     });

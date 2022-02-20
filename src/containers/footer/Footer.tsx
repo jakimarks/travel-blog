@@ -12,7 +12,7 @@ const Footer: FunctionComponent<Props> = (props) => {
     return (<div className="footer">
         <div className="footer__left">
             <Logo/>
-            <span>"Einfach mal machen, könnte ja gut werden."</span>
+            <span>"Einfach mal machen, könnte gut werden."</span>
         </div>
         <div className="footer__right">
             <Link to='/blog' className="footer__right__title">Mehr auf unserem Blog</Link>
