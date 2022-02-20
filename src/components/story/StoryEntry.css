@@ -72,16 +72,11 @@
 }
 
 .story-entry__image {
-    padding-top: 80px;
     width: 400px;
     object-fit: cover;
 }
 
 @media screen and (min-width: 1200px) {
-    .story-entry {
-    }
-    .story-entry__image {
-    }
     .story-entry__title {
         font-size: 72px;
     }
@@ -92,6 +87,9 @@
         flex-wrap: wrap;
     }
     .story-entry__image {
+        max-width: 90vw;
+        width: 100%;
+        margin: 0 auto;
     }
     .story-entry__title {
         font-size: 48px;
@@ -101,8 +99,6 @@
 @media screen and (max-width: 600px) {
     .story-entry {
         flex-wrap: wrap;
-    }
-    .story-entry__image {
     }
     .story-entry__title {
         font-size: 32px;
