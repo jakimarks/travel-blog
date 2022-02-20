@@ -1,11 +1,10 @@
 import './Logo.css'
+import React from "react";
+import {ReactComponent as ReactLogo} from '../../assets/logo.svg';
 
 function Logo() {
     return (
-        <div className="logo">
-            <span className="logo__arrows">→←→</span>
-            <span className="logo__text">Abenteuer</span>
-        </div>
+        <ReactLogo className="logo" width="100px"/>
     )
 }
 
